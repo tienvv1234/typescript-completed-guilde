@@ -25,18 +25,28 @@ Type annotations: Code we add to tell Typescript what type of value a variable w
 type inference: Typescript tries to figure out what type of value a variable refers to (if we use declare type and assign in a same line typescript will use type inference for use. eg: let apples = 5)
 
 Compare:
-Type annotations                                                            type inference
-We (developers) tell typescript the type                                    Typescript guesses the type
+Type annotations type inference
+We (developers) tell typescript the type Typescript guesses the type
 
-Inf: 
-Type annotations: 
-+ When we declare a variable on one line then initialize it later
-+ When we want a variable to have a type that can't be inferred
-+ When a function returns the 'any' type and we need to clarify the value
-type Inference
-+ always
+Inf:
+Type annotations:
+
+- When we declare a variable on one line then initialize it later
+- When we want a variable to have a type that can't be inferred
+- When a function returns the 'any' type and we need to clarify the value
+  type Inference
+- always
 
 type any
+
 - A type, just as 'string' or 'boolean' are
 - Means ts has hno idea what this is - can not check for correct property references
 - Avoid variables with 'any' at all costs
+
+type function
+
+- Type Annotation for function: Code we add to tell typescript what type of arguments a function will receive and what type of values it will return
+
+- Type Inference for function: Typescript tries to figure out what type of value a function will return
+
+never type means never rich the end of function, never execute function completely
