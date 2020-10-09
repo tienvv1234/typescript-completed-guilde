@@ -40,3 +40,24 @@ type any
 - A type, just as 'string' or 'boolean' are
 - Means ts has hno idea what this is - can not check for correct property references
 - Avoid variables with 'any' at all costs
+
+### Tuples
+- Definition
+Array-like structure where each element represents some property of a record
+
+- why do we care
+
+### Interfaces
+- Definition
+Creates a new type, describing the property names and vlue types of an object
+
+General strategy for reusable code in ts
++ Create functions that accept arguments that are typed with interface types
++ Objects/class can decide to implement a given interface to work with a function
+
+### classes
+- Definition
+Blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'
++ first: Define a set of fields (values) and methods (functions) to represent a 'thing'
++ second: define a set of 
+
