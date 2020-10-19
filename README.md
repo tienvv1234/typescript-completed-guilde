@@ -70,3 +70,11 @@ type function
 - Type Inference for function: Typescript tries to figure out what type of value a function will return
 
 never type means never rich the end of function, never execute function completely
+
+### Tool parcel-bundler
+command: npm install -g parcel-bundler
+parcel index.html
+Tool to help us run ts in the browser
+
+how it work:
+we can run script of index.ts in the browser, parcel-bundler will see the script tag and parse code inside the ts file to js and replace this script tag
