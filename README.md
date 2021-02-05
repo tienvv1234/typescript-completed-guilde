@@ -78,3 +78,22 @@ Tool to help us run ts in the browser
 
 how it work:
 we can run script of index.ts in the browser, parcel-bundler will see the script tag and parse code inside the ts file to js and replace this script tag
+
+### Type Definition file
+is a adapter layer between typescript code and javascript library
+- some time the type definition is installed when we install js library
+like axios library, we don't need to create type definition of it, because it has already had the type definition by default
+
+tsc will compile the root directory code to build folder and -w is watch
+
+type Guard
+- typeof Narrow type of a value to a primitive type 'string| number | boolean | symbol'
+
+- instanceof narrow down every other type of value
+
+### Abstract  classes
+- Can't be used to create an object directly
+- Only used as a parent class
+- Can contain real implementation for some methods
+- the implemented methods can refer to other methods that don't actually exist yet ( we still have to provide name and types for the un-implemented methods)
+- Can make child classes promise to implement some other method
