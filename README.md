@@ -97,3 +97,24 @@ type Guard
 - Can contain real implementation for some methods
 - the implemented methods can refer to other methods that don't actually exist yet ( we still have to provide name and types for the un-implemented methods)
 - Can make child classes promise to implement some other method
+
+
+### when use enum
+Follow near-identical syntax rules as normal object
+Creates an object with the same keys and values when converted from ts to js
+primary goal is to signal to other engineers that these are all closely related values
+Use whenever we have a small fixed set of values that are all closely related and known at compile time
+
+### generic
+- Like function arguments, but for types in class/function definitions
+- Allow us to define th type of property/argument/return value at a future point
+- Used heavily when writing reusable code
+
+### Inheritance vs Composition
+- Inheritance have abstract class and child classes expand type of data
+- Composition have interface and Composite class, composite class will create instance of type, and class must same properties and method with interface, to custom how the class behavior
+
+- Inheritance --> Characterized by an 'is a' relationship between two class --> tuc la class con la` 1 class cha (MatchReader is a CsvFileReader)
+- Composition --> Characterized by an 'has a' relationship between two class --> class co 1 instance cua 1 class khac
+
+favor object composition over class inheritance ( probably the most misunderstood statement ever) 

@@ -9,7 +9,9 @@
     "start": "concurrently npm:start:*",
     "start_stats:build": "tsc --p ./stats/tsconfig.json -w",
     "start_stats:run": "nodemon ./stats/build/index.js",
-    "start_stats": "concurrently npm:start_stats:*"
+    "start_stats": "concurrently npm:start_stats:*",
+    "start:db": "json-server -w web/db.json",
+    "start:parcel": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
