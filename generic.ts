@@ -33,7 +33,7 @@ function printStrings(arr: string[]): void {
     }
 }
 
-function printNumbers(arr; number[]): void {
+function printNumbers(arr: number[]): void {
 
 }
 
