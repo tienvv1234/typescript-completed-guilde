@@ -1,8 +1,10 @@
 import axios, { AxiosPromise } from 'axios';
-import { UserProps } from './User';
 
+interface HasId {
+    id: number;
+}
 
-export class Sync {
+export class Sync<T extends HasId> {
     constructor(private rootUrl: string) { }
 
     // async fetch(id: number): Promise<AxiosResponse<UserProps>> {
@@ -14,7 +16,7 @@ export class Sync {
         return axios.get(`${this.rootUrl}/${id}`);
     }
 
-    save(data: UserProps): AxiosPromise {
+    save(data: T): AxiosPromise {
         const { id } = data;
         
         if (id) {
