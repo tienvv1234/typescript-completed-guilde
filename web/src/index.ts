@@ -16,4 +16,8 @@ import axios from 'axios';
 
 const user = new User({ id: 1});
 
-user.fetch();
+user.events.on('change', () => {
+    console.log('changed');
+});
+
+user.events.trigger('change');
