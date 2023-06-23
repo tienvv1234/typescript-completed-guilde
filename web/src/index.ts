@@ -14,10 +14,10 @@ import axios from 'axios';
 //     age: 20
 // });
 
-const user = new User({ id: 1});
+const user = new User({ id: 1 });
 
-user.events.on('change', () => {
-    console.log('changed');
+user.on('change', () => {
+    console.log(user);
 });
 
-user.events.trigger('change');
+user.fetch();
