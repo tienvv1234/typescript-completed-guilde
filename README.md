@@ -118,3 +118,7 @@ Use whenever we have a small fixed set of values that are all closely related an
 - Composition --> Characterized by an 'has a' relationship between two class --> class co 1 instance cua 1 class khac
 
 favor object composition over class inheritance ( probably the most misunderstood statement ever) 
+
+### Two important rules
+1 In typescript, string can be types
+2 In JS (and therefore TS), all objects keys are string
